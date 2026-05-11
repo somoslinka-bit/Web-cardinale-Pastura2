@@ -222,9 +222,9 @@
       inset: 0;
       background: linear-gradient(
         160deg,
-        rgba(28, 25, 45, 0.52) 0%,
-        rgba(28, 25, 45, 0.38) 45%,
-        rgba(28, 25, 45, 0.82) 100%
+        rgba(28, 25, 45, 0.68) 0%,
+        rgba(28, 25, 45, 0.54) 45%,
+        rgba(28, 25, 45, 0.90) 100%
       );
     }
     .hero__content {
@@ -277,9 +277,9 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 1.7;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255,255,255,0.95);
       max-width: 460px;
-      text-shadow: 0 1px 12px rgba(0,0,0,0.30);
+      text-shadow: 0 2px 20px rgba(0,0,0,0.70), 0 1px 6px rgba(0,0,0,0.50);
     }
     .btn-outline {
       display: inline-flex;
@@ -1070,6 +1070,18 @@
       * { transition-duration: 0.01ms !important; }
     }
 
+    /* ── SECTION BLENDS ────────────────────────────────────── */
+    .blend {
+      display: block;
+      height: 72px;
+      margin: -1px 0;
+      pointer-events: none;
+    }
+    .blend--navy-cream  { background: linear-gradient(to bottom, #3C4262, #F4F2EE); }
+    .blend--white-dark  { background: linear-gradient(to bottom, #FFFFFF, #12101A); }
+    .blend--dark-white  { background: linear-gradient(to bottom, #12101A, #FFFFFF); }
+    .blend--white-navy  { background: linear-gradient(to bottom, #FFFFFF, #3C4262); }
+
     /* ── PRELOADER ──────────────────────────────────────────── */
     #preloader {
       position: fixed;
@@ -1223,6 +1235,53 @@
       <span class="ticker__item">Buenos Aires <span class="ticker__dot"></span></span>
     </div>
   </div>
+  <div class="blend blend--navy-cream" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════════════
+       TEAM / NOSOTROS
+  ════════════════════════════════════════════ -->
+  <section class="team" id="nosotros" aria-labelledby="team-title">
+    <div class="container">
+      <div class="team__grid">
+
+        <div class="team__img-wrap fade">
+          <img src="Cardinale-Pastura/fotos profesionales/DSC_7667.jpg"
+               alt="Equipo Cardinale Pastura"
+               class="team__img"
+               loading="lazy">
+          <div class="team__accent" aria-hidden="true"></div>
+        </div>
+
+        <div>
+          <div class="label team__label fade">Quiénes somos</div>
+          <h2 id="team-title" class="team__title fade d1">
+            Una empresa construida sobre<br><em>confianza</em> y visión de largo plazo.
+          </h2>
+          <p class="team__p fade d2">
+            Cardinale Pastura es una desarrolladora inmobiliaria con base en Tandil, Argentina. Nacimos de la convicción de que los proyectos de calidad no solo se construyen con materiales: se construyen con criterio, compromiso y una mirada puesta en el futuro.
+          </p>
+          <p class="team__p fade d2">
+            Nuestro equipo combina experiencia inmobiliaria, gestión de proyectos y atención al cliente en un solo proceso fluido y transparente. Trabajamos con cada inversor como si fuera el único.
+          </p>
+          <div class="team__stats fade d3">
+            <div>
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Años en el mercado</div>
+            </div>
+            <div>
+              <div class="stat-num">500+</div>
+              <div class="stat-label">Unidades desarrolladas</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Proyectos entregados</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
   <!-- ════════════════════════════════════════════
@@ -1404,6 +1463,8 @@
   </section>
 
 
+  <div class="blend blend--white-dark" aria-hidden="true"></div>
+
   <!-- ════════════════════════════════════════════
        GALLERY / FULLBLEED
   ════════════════════════════════════════════ -->
@@ -1424,52 +1485,7 @@
   </div>
 
 
-  <!-- ════════════════════════════════════════════
-       TEAM / NOSOTROS
-  ════════════════════════════════════════════ -->
-  <section class="team" id="nosotros" aria-labelledby="team-title">
-    <div class="container">
-      <div class="team__grid">
-
-        <div class="team__img-wrap fade">
-          <img src="Cardinale-Pastura/fotos profesionales/DSC_7667.jpg"
-               alt="Equipo Cardinale Pastura"
-               class="team__img"
-               loading="lazy">
-          <div class="team__accent" aria-hidden="true"></div>
-        </div>
-
-        <div>
-          <div class="label team__label fade">Quiénes somos</div>
-          <h2 id="team-title" class="team__title fade d1">
-            Una empresa construida sobre<br><em>confianza</em> y visión de largo plazo.
-          </h2>
-          <p class="team__p fade d2">
-            Cardinale Pastura es una desarrolladora inmobiliaria con base en Tandil, Argentina. Nacimos de la convicción de que los proyectos de calidad no solo se construyen con materiales: se construyen con criterio, compromiso y una mirada puesta en el futuro.
-          </p>
-          <p class="team__p fade d2">
-            Nuestro equipo combina experiencia inmobiliaria, gestión de proyectos y atención al cliente en un solo proceso fluido y transparente. Trabajamos con cada inversor como si fuera el único.
-          </p>
-          <div class="team__stats fade d3">
-            <div>
-              <div class="stat-num">10+</div>
-              <div class="stat-label">Años en el mercado</div>
-            </div>
-            <div>
-              <div class="stat-num">500+</div>
-              <div class="stat-label">Unidades desarrolladas</div>
-            </div>
-            <div>
-              <div class="stat-num">100%</div>
-              <div class="stat-label">Proyectos entregados</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+  <div class="blend blend--dark-white" aria-hidden="true"></div>
 
   <!-- ════════════════════════════════════════════
        FAQ
@@ -1568,6 +1584,8 @@
     </div>
   </section>
 
+
+  <div class="blend blend--white-navy" aria-hidden="true"></div>
 
   <!-- ════════════════════════════════════════════
        CTA
